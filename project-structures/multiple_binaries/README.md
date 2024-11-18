@@ -2,7 +2,7 @@
 
 This project demonstrates how to scope multiple binaries into a single project.
 
-You can build all binaries at he same time or individually.
+You can build all binaries at the same time or individually.
 
 ```sh
 cargo build
@@ -18,7 +18,7 @@ You cannot run them at the same time so you need to be explicit when executing t
 cargo run --bin main1
 ```
 
-You can name you binaries in Cargo.toml.
+You can give your binaries explicit names in Cargo.toml, otherwise they inherit their file prefix.
 
 ```sh
 [package]
