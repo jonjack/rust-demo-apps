@@ -1,8 +1,9 @@
 
 
-# Simple Lambda Local Docker Build
+# README
 
-This project just demonstrates an approach to building a lambda.zip locally (inside a docker container) for upload to AWS. This is not an ideal approach, you would rather use CDK, or better still [cargo-lambda](https://www.cargo-lambda.info/) which is wrapper around AWS CDK with some useful functions.
+
+This project demonstrates how to create and manage a simple project using [cargo-lambda](https://www.cargo-lambda.info/).
 
 The function itself does nothing interesting, it accepts a plain JSON body which it logs and then echos back to the caller.
 
@@ -35,7 +36,7 @@ Upload the zip file:-
 Select the Lambda you created and in the **Code** tab choose **Upload from** -> **.zip** file. Choose the local .zip file and **Save**.
 
 
-## Running the demo
+## Running the function on AWS
 
 The simplest way to test this function is using the Test tab of the Lambda console itself. Send any JSON request body and the function should log the request and echo the payload contents.
 
@@ -57,9 +58,7 @@ Payload {"firstName":"Harry","lastName":"Callahan","nickName":"Dirty Harry"}.
 END RequestId: 49dea0b0-8041-46e7-af5a-0333c0515c17
 REPORT RequestId: 49dea0b0-8041-46e7-af5a-0333c0515c17	Duration: 0.91 ms	
 Billed Duration: 1 ms	Memory Size: 128 MB	Max Memory Used: 16 MB	
-
 ```
 
 Alternatively, you could expose a function URL and send a request using something like Postman.
-
 
