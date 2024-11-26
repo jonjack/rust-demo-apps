@@ -1,5 +1,5 @@
 [package]
-name = "simple_lambda_local_docker_build"
+name = "simple-lambda-local-docker-build"
 version = "0.1.0"
 edition = "2021"
 

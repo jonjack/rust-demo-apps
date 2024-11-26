@@ -12,7 +12,7 @@
 LAMBDA_ARCH="linux/arm64" # set this to either linux/arm64 for ARM functions, or linux/amd64 for x86 functions.
 RUST_TARGET="aarch64-unknown-linux-gnu" # corresponding with the above, set this to aarch64 or x86_64 -unknown-linux-gnu for ARM or x86 functions.
 RUST_VERSION="latest" # Set this to a specific version of rust you want to compile for, or to latest if you want the latest stable version.
-PROJECT_NAME="simple_lambda_local_docker_build"
+PROJECT_NAME="simple-lambda-local-docker-build"
 
 # This will run a linux docker container and execute a cargo build within it
 # To save the result of the build from our container to our local system we map a volume using -v

@@ -3,7 +3,7 @@
 # AWS Lambdas on Rust
 
 
-Some sample AWS Lambda project written in Rust.
+Some sample AWS Lambda projects written in Rust.
 
 
 ---

@@ -1,5 +1,5 @@
 [package]
-name = "simple_cargo_lambda_project"
+name = "simple-cargo-lambda"
 version = "0.1.0"
 edition = "2021"
 
